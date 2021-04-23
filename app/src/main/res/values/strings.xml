@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Crown 11</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="todo">Todo</string>
+    <string name="enter_your_username">Enter Your UserName</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="login_via_facebook">Login Via FaceBook</string>
+    <string name="login_via_otp">Login VIA Otp</string>
+    <string name="AppSlogan">Make The Best of Your 11</string>
+    <string name="verify_phone_no_via_otp">Verify Phone-No. via otp</string>
+    <string name="re_enter_your_password">Re-enter Your Password</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+</resources>

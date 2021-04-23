@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/IvOtpIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/BtFacebookLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IvFacebookLogo"
+        app:srcCompat="@drawable/ic_otp_icon" />
+
+    <Button
+        android:id="@+id/BtSignUp"
+        android:layout_width="111dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#0C1C40"
+        android:onClick="OnSignUp"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Btlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Btlogin" />
+
+    <Button
+        android:id="@+id/Btlogin"
+        android:layout_width="110dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#f7f7f7"
+        android:onClick="OnLogin"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#0C1C40"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtLoginPassword"
+        app:strokeColor="#0C1C40"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/IvLogoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="75dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IvLogo"
+        app:srcCompat="@drawable/name" />
+
+    <ImageView
+        android:id="@+id/IvLogo"
+        android:layout_width="134dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c11logo" />
+
+    <EditText
+        android:id="@+id/EtLoginUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/enter_your_username"
+        android:importantForAutofill="no"
+        android:inputType="textLongMessage|textPersonName"
+        android:textColor="#0C1C40"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/EtLoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="#0C1C40"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtLoginUserName" />
+
+    <Button
+        android:id="@+id/BtFacebookLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#f7f7f7"
+        android:text="@string/login_via_facebook"
+        android:textColor="#0C1C40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IvFacebookLogo"
+        app:layout_constraintTop_toBottomOf="@+id/BtSignUp" />
+
+    <ImageView
+        android:id="@+id/IvFacebookLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/BtFacebookLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtSignUp"
+        app:srcCompat="@drawable/facebooklogo" />
+
+    <Button
+        android:id="@+id/BtOtpLogin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#0C1C40"
+        android:text="@string/login_via_otp"
+        android:textColor="#f7f7f7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IvOtpIcon"
+        app:layout_constraintTop_toBottomOf="@+id/BtFacebookLogin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/AppSlogan"
+        android:textColor="#0C1C40"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IvLogoName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
