@@ -1,7 +1,7 @@
-#Intent:You are expected to build a mobile application which is inspired by Dream 11.
+#Intent:You are expected to build a mobile application which is inspired by Dream 11./
 #Links for reference -
 https://play.google.com/store/apps/details?id=com.dreamsportsteam.fantasyprediction&hl=en_IN&g
-l=US
+l=US/
 #Your application is expected to have certain features which are listed down below:
 
 ● Login and signup via
@@ -22,7 +22,8 @@ these logs you are expected to replicate the live match. Here each ball will hav
 to replicate the real nature of the match with each ball thrown, the dashboard has to be updated
 automatically without refreshing the page)
 
-● Scoreboard
+● Scoreboard/
+
 #Note -
 
 ● Team cannot be selected before choosing a dummy match
