@@ -1,4 +1,4 @@
-package com.example.crown11;
+package com.example.crown11.Activities;
 
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.crown11.MyAdapter;
+import com.example.crown11.R;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;

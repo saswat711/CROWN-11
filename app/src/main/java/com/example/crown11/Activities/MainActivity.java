@@ -1,4 +1,4 @@
-package com.example.crown11;
+package com.example.crown11.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.crown11.R;
+
 public class MainActivity extends AppCompatActivity {
     protected EditText usernameet , passwordet;
-    private String event="com.example.crown11.MainActivity";
+    private String event="com.example.crown11.Activities.MainActivity";
 
     /* Work to do for Aryan
 
@@ -46,7 +48,7 @@ profile screen
         String username = usernameet.getText().toString();
         String password = passwordet.getText().toString();
         Log.d(event,"Login Button Clicked");
-        Intent loginintent = new Intent(this,ProfileScreen.class);
+        Intent loginintent = new Intent(this, ProfileScreen.class);
         startActivity(loginintent);
     }
 

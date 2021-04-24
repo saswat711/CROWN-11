@@ -1,4 +1,4 @@
-package com.example.crown11;
+package com.example.crown11.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.crown11.R;
 
 public class SignupActivity extends AppCompatActivity {
 EditText phonenoet;

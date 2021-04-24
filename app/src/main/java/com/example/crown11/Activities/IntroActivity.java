@@ -1,10 +1,12 @@
-package com.example.crown11;
+package com.example.crown11.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.crown11.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
