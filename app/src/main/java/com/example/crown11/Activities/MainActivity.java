@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnOtpLogin(View view) {
         Intent otpintent = new Intent(this,OtpverifyActivity.class);
+        String PhoneNo = "";
+        otpintent.putExtra(PhoneNo,"Login");
         startActivity(otpintent);
     }
 }

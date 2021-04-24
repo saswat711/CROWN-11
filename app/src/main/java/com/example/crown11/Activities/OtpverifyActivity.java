@@ -17,11 +17,8 @@ EditText phonenumberet;
         setContentView(R.layout.activity_otpverify);
         phonenumberet = findViewById(R.id.EtPhoneNumberOtp);
        Bundle way =getIntent().getExtras();
-       String methodFrom = way.getString("method");
-       if (methodFrom.equals("SignUp")){
-           String PhoneNo= way.getString("PhoneNo");
-           phonenumberet.setText(PhoneNo);
-       }
+       String phoneno = way.getString("PhoneNo");
+       phonenumberet.setText(phoneno);
 
     }
 

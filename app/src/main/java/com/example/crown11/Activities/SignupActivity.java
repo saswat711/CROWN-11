@@ -23,9 +23,7 @@ EditText phonenoet;
 
     public void OnOtpVerify(View view) {
         Intent otpintent = new Intent(this,OtpverifyActivity.class);
-        String method = "SignUp";
         String PhoneNo = "inputno";
-        otpintent.putExtra(method,"SignUp");
         otpintent.putExtra(PhoneNo,phonenoet.getText().toString());
         startActivity(otpintent);
     }
