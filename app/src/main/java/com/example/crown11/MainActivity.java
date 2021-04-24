@@ -12,6 +12,19 @@ public class MainActivity extends AppCompatActivity {
     protected EditText usernameet , passwordet;
     private String event="com.example.crown11.MainActivity";
 
+    /* Work to do for Aryan
+
+    Add function to the login button Show that it goes to profile screen on successful
+   store the user name and phone number as it would be used on profile screen and pass it as extras for
+   profile screen
+
+Add function to the facebook login and make store the user name and pass it as extras for
+profile screen
+
+   change code for sign up activity and login activity
+
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnOtpLogin(View view) {
         Intent otpintent = new Intent(this,OtpverifyActivity.class);
-        String PhoneNo = "";
-        otpintent.putExtra(PhoneNo,"Login");
+
         startActivity(otpintent);
     }
 }
