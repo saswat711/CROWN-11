@@ -3,40 +3,40 @@
     <string name="login">Login</string>
     <string name="signup">Sign Up</string>
     <string name="todo">Todo</string>
+
+    <!--- Main Activity used Strings-->
     <string name="enter_your_username">Enter Your UserName</string>
     <string name="enter_your_password">Enter Your Password</string>
     <string name="login_via_facebook">Login Via FaceBook</string>
     <string name="login_via_otp">Login VIA Otp</string>
     <string name="AppSlogan">Make The Best of Your 11</string>
+
+    <!--- SignUp Activity used Strings-->
     <string name="verify_phone_no_via_otp">Verify Phone-No. via otp</string>
     <string name="re_enter_your_password">Re-enter Your Password</string>
+
+    <!--- OtpVerify Activity used Strings-->
     <string name="enter_your_phone_number">Enter Your Phone Number</string>
     <string name="verify_otp">Verify OTP</string>
     <string name="send_otp">Send OTP</string>
     <string name="enter_the_otp">Enter The OTP</string>
+
+    <!--- Profile Screen Activity used Strings-->
     <string name="title_activity_profile_screen">ProfileScreen</string>
 
-    <string name="action_settings">Settings</string>
-
-
-    <string name="custom_action_bar">Custom Action Bar</string>
+    <!--- String used for tab view names-->
     <string name="matches">Matches</string>
     <string name="live">Live</string>
     <string name="points">Points</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!--- String used for profile tab/fragment-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="user_name">User Name</string>
     <string name="phone_number">Phone Number</string>
     <string name="total_points_earned">Total Points Earned</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+
+    <!-- Strings related to Sign Out Fragment-->
     <string name="are_you_sure_want_to_sign_out">Are You Sure Want To Sign Out</string>
     <string name="cancel">cancel</string>
     <string name="confirm">confirm</string>
