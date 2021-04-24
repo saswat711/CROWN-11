@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpverifyActivity">
+
+    <Button
+        android:id="@+id/VerifyOtpBt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#0C1C40"
+        android:onClick="OnVerify"
+        android:text="@string/verify_otp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/EtPhoneNumberOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="@string/enter_your_phone_number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/EtOtp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="@string/enter_the_otp"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtPhoneNumberOtp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#F7F7F7"
+        android:onClick="OnSendOtp"
+        android:text="@string/send_otp"
+        android:textColor="#0C1C40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtOtp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

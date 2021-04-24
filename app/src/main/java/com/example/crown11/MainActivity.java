@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         String password = passwordet.getText().toString();
         Log.d(event,"Login Button Clicked");
     }
+
+    public void OnOtpLogin(View view) {
+        Intent otpintent = new Intent(this,OtpverifyActivity.class);
+        startActivity(otpintent);
+    }
 }

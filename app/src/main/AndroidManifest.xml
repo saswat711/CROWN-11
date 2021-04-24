@@ -10,24 +10,26 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Clone11"
-        android:screenOrientation = "portrait">
-        <activity android:name=".SignupActivity"
-            android:screenOrientation = "portrait">
-        </activity>
-        <activity android:name=".IntroActivity"
-            android:screenOrientation = "portrait">
+        android:theme="@style/Theme.Clone11">
+        <activity android:name=".ProfileScreen"></activity>
+        <activity android:name=".OtpverifyActivity" />
+        <activity
+            android:name=".SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".MainActivity"  android:screenOrientation = "portrait">
-
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

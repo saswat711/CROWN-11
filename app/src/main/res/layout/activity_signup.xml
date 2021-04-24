@@ -122,10 +122,10 @@
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="95dp"
-        android:backgroundTint="#0C1C40"
+        android:backgroundTint="#F7F7F7"
         android:onClick="OnOtpVerify"
         android:text="@string/verify_phone_no_via_otp"
-        android:textColor="#f7f7f7"
+        android:textColor="#0C1C40"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/IvOtpIcon"
@@ -146,7 +146,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IvLogoName" />
 
-    <TextView
+    <EditText
         android:id="@+id/EtSignPhoneNo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -154,8 +154,9 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/edittext_bg"
-        android:shadowColor="#0C1C40"
-        android:text="@string/enter_your_phone_number"
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="phone"
+        android:textColor="#0C1C40"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/EtSignUserName"
         app:layout_constraintEnd_toEndOf="parent"
