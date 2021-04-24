@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/ProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_profile_icon"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/ivlogoaction"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/c11logo" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="0dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#0C1C40"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

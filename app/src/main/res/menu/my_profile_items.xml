@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/logoview"
+        android:layout_gravity="center"
+        android:icon="@drawable/c11logo"
+        android:title="@string/app_name">
+
+    </item>
+    <item
+        android:id="@+id/phonenumberview"
+        android:title="@string/phone_number"
+        app:showAsAction="always"
+        android:layout_gravity="center"/>
+    <item
+        android:id="@+id/phoneno"
+        android:title= "7978744898"
+        app:showAsAction="always"
+        android:layout_gravity="center"/>
+    <item
+        android:id="@+id/totalpointsview"
+        android:title="@string/total_points_earned"
+        app:showAsAction="always"
+        android:layout_gravity="center"/>
+    <item
+        android:id="@+id/totalpoints"
+        android:title="180"
+        app:showAsAction="always"
+        android:layout_gravity="center"/>
+    <item android:id = "@id/ProfileView"
+        android:title="@string/profile"
+        app:showAsAction="always">
+
+    </item>
+</menu>

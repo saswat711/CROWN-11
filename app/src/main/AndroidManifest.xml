@@ -13,8 +13,11 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clone11">
-        <activity android:name=".ProfileScreen"></activity>
-        <activity android:name=".OtpverifyActivity" />
+        <activity
+            android:name=".ProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name=".OtpverifyActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SignupActivity"
             android:screenOrientation="portrait" />

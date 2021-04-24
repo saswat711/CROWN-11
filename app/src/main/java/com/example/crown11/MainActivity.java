@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         String username = usernameet.getText().toString();
         String password = passwordet.getText().toString();
         Log.d(event,"Login Button Clicked");
+        Intent loginintent = new Intent(this,ProfileScreen.class);
+        startActivity(loginintent);
     }
 
     public void OnOtpLogin(View view) {
