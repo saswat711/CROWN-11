@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.crown11.fragment.LiveFragment;
+import com.example.crown11.fragment.MatchFragment;
+import com.example.crown11.fragment.PointsFragment;
+
 public class MyAdapter extends FragmentPagerAdapter {
 
     private Context myContext;

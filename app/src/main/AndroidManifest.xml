@@ -14,15 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Clone11">
         <activity
-            android:name=".ProfileScreen"
+            android:name=".Activities.ProfileScreen"
             android:screenOrientation="portrait" />
-        <activity android:name=".OtpverifyActivity"
+        <activity android:name=".Activities.OtpverifyActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".SignupActivity"
+            android:name=".Activities.SignupActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".Activities.IntroActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:screenOrientation="portrait" />
     </application>
 
