@@ -27,19 +27,33 @@ import java.util.concurrent.TimeUnit;
 
 public class OtpverifyActivity extends AppCompatActivity {
 
-    FirebaseAuth mAuth;
     EditText phonenumberet;
     String phoneno;
     String mVerificationId;
     PhoneAuthProvider.ForceResendingToken mResendToken;
+    FirebaseAuth mAuth;
+
+
+/* Work to do for Aryan
+
+this activity is common for both login activity and veify otp for sign up
+
+
+verify the otp when successful come back to this activity show the button Sign up and disable the verify otp button
+save the username  phone number and  password on fire base
+if the verification is successful than only store it
+
+if verification not successful come back to show retry in this activity only t
+
+ */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otpverify);
 
-        mAuth = FirebaseAuth.getInstance();
-
         phonenumberet = findViewById(R.id.EtPhoneNumberOtp);
+
+        mAuth = FirebaseAuth.getInstance();
         Bundle way =getIntent().getExtras();
         phoneno = way.getString("PhoneNo");
         phonenumberet.setText(phoneno);

@@ -12,10 +12,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="95dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toStartOf="@+id/BtOtpLogin"
+        app:layout_constraintEnd_toStartOf="@+id/BtOtpVerify"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/BtOtpLogin"
+        app:layout_constraintTop_toTopOf="@+id/BtOtpVerify"
         app:srcCompat="@drawable/ic_otp_icon" />
 
     <Button
@@ -28,10 +28,11 @@
         android:text="@string/signup"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:visibility="invisible"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtOtpLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/BtOtpVerify" />
 
     <ImageView
         android:id="@+id/IvLogoName"
@@ -117,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/EtSignPassword" />
 
     <Button
-        android:id="@+id/BtOtpLogin"
+        android:id="@+id/BtOtpVerify"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
@@ -162,6 +163,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
