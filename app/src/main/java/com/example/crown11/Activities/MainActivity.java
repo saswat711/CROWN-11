@@ -57,4 +57,7 @@ profile screen
 
         startActivity(otpintent);
     }
+
+    public void onFaceBookLogin(View view) {
+    }
 }
