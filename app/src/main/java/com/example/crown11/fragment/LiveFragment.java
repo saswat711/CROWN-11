@@ -7,6 +7,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.io.FileReader;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
 
 import com.example.crown11.R;
 
@@ -55,6 +68,8 @@ public class LiveFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
@@ -62,5 +77,8 @@ public class LiveFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_live, container, false);
+
+
     }
+
 }
