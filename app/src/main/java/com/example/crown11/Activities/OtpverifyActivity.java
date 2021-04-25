@@ -3,7 +3,9 @@ package com.example.crown11.Activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +34,8 @@ public class OtpverifyActivity extends AppCompatActivity {
     String mVerificationId;
     PhoneAuthProvider.ForceResendingToken mResendToken;
     FirebaseAuth mAuth;
-
+    SharedPreferences loggedin;
+    public static final  String isLogin = "isLoginKey";
 
 /* Work to do for Aryan
 
@@ -57,6 +60,7 @@ if verification not successful come back to show retry in this activity only t
         Bundle way =getIntent().getExtras();
         phoneno = way.getString("PhoneNo");
         phonenumberet.setText(phoneno);
+        loggedin = getSharedPreferences(MainActivity.MyPREFERENCES, Context.MODE_PRIVATE);
     }
 
     public void OnVerify(View view) {
@@ -130,6 +134,9 @@ if verification not successful come back to show retry in this activity only t
                             Log.d("Aryan", "signInWithCredential:success");
 
                             FirebaseUser user = task.getResult().getUser();
+                            SharedPreferences.Editor editor = loggedin.edit();
+                            editor.putBoolean(isLogin, true);
+                            editor.apply();
                             startActivity(new Intent(OtpverifyActivity.this,ProfileScreen.class));
                             // Update UI
                         } else {

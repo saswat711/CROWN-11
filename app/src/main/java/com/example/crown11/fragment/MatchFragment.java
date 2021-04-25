@@ -23,7 +23,7 @@ import java.util.Random;
  * create an instance of this fragment.
  */
 public class MatchFragment extends Fragment {
-    int randomNumber;
+   protected int randomNumber;
     TextView compview,team1view,team2view;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
