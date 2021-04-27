@@ -28,33 +28,7 @@
         app:headerLayout = "@layout/nav_header_main"
         app:menu="@menu/bottom_settings" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/TabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/MatchesTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/matches" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/LiveTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/live" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/PointsTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/points" />
-    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/SettingsViewPager"
@@ -67,15 +41,6 @@
 
     </androidx.viewpager2.widget.ViewPager2>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/TabviewPager"
-        android:layout_width="0dp"
-        android:layout_height="603dp"
-        app:layout_constraintBottom_toTopOf="@+id/SettingsView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TabLayout">
 
-    </androidx.viewpager.widget.ViewPager>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -141,6 +141,9 @@ if verification not successful come back to show retry in this activity only t
                             // Update UI
                         } else {
                             // Sign in failed, display a message and update the UI
+                            SharedPreferences.Editor editor = loggedin.edit();
+                            editor.putBoolean(isLogin, false);
+                            editor.apply();
                             Log.w("Aryan", "signInWithCredential:failure", task.getException());
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 // The verification code entered was invalid

@@ -14,6 +14,7 @@ import com.example.crown11.R;
 
 public class MainActivity extends AppCompatActivity {
     protected EditText usernameet , passwordet;
+
     private String event="com.example.crown11.Activities.MainActivity";
     public static final String MyPREFERENCES = "MyPrefs" ;
     public static final  String isLogin = "isLoginKey";
@@ -40,6 +41,7 @@ profile screen
         loggedin = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         if(loggedin.getBoolean(isLogin,true))
         {
+            Log.d(event,"already logged in going to main activity");
             Intent autologinintent = new Intent(this, ProfileScreen.class);
             startActivity(autologinintent);
         }
@@ -66,6 +68,7 @@ profile screen
     }
 
     public void OnOtpLogin(View view) {
+        Log.d(event,"Login by otp clicked");
         Intent otpintent = new Intent(this,OtpverifyActivity.class);
         startActivity(otpintent);
     }

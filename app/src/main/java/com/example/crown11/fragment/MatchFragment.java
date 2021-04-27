@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,7 @@ public class MatchFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private String event="com.example.crown11.fragment.MatchFragment";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -63,7 +65,7 @@ public class MatchFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
+        Log.d(event," get the name for json file");
         try{
             //getting the random number for json file
             int i=0;
@@ -92,7 +94,7 @@ public class MatchFragment extends Fragment {
                 i= 0;
             }
 
-            String filename= getString(randomNumber);
+            String filename= String.valueOf(randomNumber);
             // get JSONObject from JSON file
             JSONObject match = new JSONObject(filename);
             // fetch JSONObject named info
@@ -101,13 +103,7 @@ public class MatchFragment extends Fragment {
             String competiton = info.getString("competition");
             compview.setText(competiton);
 
-            JSONArray teams = info.getJSONArray("teams");
-            for (int j = 0; j < teams.length(); j++) {
-                JSONObject jsonobject = teams.getJSONObject(i);
-                String skills = jsonobject.getString("");
-                String platforms = jsonobject.getString("");
-            }
-
+       
 
 
         }

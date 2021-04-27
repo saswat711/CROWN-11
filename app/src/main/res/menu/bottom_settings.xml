@@ -12,5 +12,8 @@
         android:id="@+id/rules"
         android:icon="@drawable/ic_rule_icon">
     </item>
-
+<item android:title="Profile"
+android:id="@+id/profile"
+android:icon="@drawable/ic_face_icon">
+</item>
 </menu>

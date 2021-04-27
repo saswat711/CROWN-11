@@ -16,9 +16,9 @@ public class MyAdapter extends FragmentPagerAdapter {
     private Context myContext;
     int totalTabs;
 
-    public MyAdapter(Context context, FragmentManager fm, int totalTabs) {
+    public MyAdapter( FragmentManager fm, int totalTabs) {
         super(fm);
-        myContext = context;
+
         this.totalTabs = totalTabs;
     }
 

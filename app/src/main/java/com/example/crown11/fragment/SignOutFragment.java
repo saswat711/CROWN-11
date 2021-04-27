@@ -16,8 +16,6 @@ import com.example.crown11.Activities.MainActivity;
 import com.example.crown11.Activities.ProfileScreen;
 import com.example.crown11.R;
 
-import java.util.Objects;
-
 public class SignOutFragment extends Fragment  implements View.OnClickListener {
 SharedPreferences loggedin;
     public static final  String isLogin = "isLoginKey";
@@ -31,6 +29,14 @@ SharedPreferences loggedin;
     public SignOutFragment() {
         // Required empty public constructor
     }
+    public static RulesFragment newInstance(String param1, String param2) {
+        RulesFragment fragment = new RulesFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,7 +45,7 @@ SharedPreferences loggedin;
         View rootview = inflater.inflate(R.layout.fragment_sign_out, container, false);
         Button confirm = rootview.findViewById(R.id.BtConfirm);
         Button cancel = rootview.findViewById(R.id.BtCancel);
-        loggedin = this.requireActivity().getSharedPreferences("pref", Context.MODE_PRIVATE);
+        loggedin = this.requireActivity().getSharedPreferences(MainActivity.MyPREFERENCES, Context.MODE_PRIVATE);
 
         return rootview;
     }
